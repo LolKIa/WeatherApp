@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
             private void api_key(final String City) {
                 OkHttpClient client = new OkHttpClient();
                 Request request = new Request.Builder()
-                        .url("http://api.openweathermap.org/data/2.5/weather?q="+City+"&appid=6475017a0663b31917b51bf8b35cbbdb&units=metric")
+                        .url("https://api.openweathermap.org/data/2.5/weather?q="+City+"&appid=02c0deac69c3f1d760a4757ed560ed9d&units=metric")
                         .get()
                         .build();
                 StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
